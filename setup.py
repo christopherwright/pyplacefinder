@@ -6,7 +6,7 @@ install_requires = []
 try:
   import json
 except ImportError:
-  
+  install_requires.append('simplejson')
 
 version = __import__('pyplacefinder').get_version()
 
